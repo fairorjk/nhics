@@ -4,12 +4,12 @@
             "id": "c-1781931931568",
             "name": "신임(경채)",
             "capacity": 60,
-            "startRange": "2027-01-24",
+            "startRange": "2027-02-01",
             "endRange": "2027-03-31",
             "segments": [
                 {
                     "type": "face-to-face",
-                    "duration": 2
+                    "duration": 1
                 },
                 {
                     "type": "online",
@@ -17,7 +17,7 @@
                 },
                 {
                     "type": "face-to-face",
-                    "duration": 3
+                    "duration": 4
                 },
                 {
                     "type": "cleanup",
@@ -32,8 +32,8 @@
                     "duration": 2,
                     "startWeek": 5,
                     "endWeek": 6,
-                    "startDate": "2026-01-26",
-                    "endDate": "2026-02-06",
+                    "startDate": "2027-01-25",
+                    "endDate": "2027-02-05",
                     "roomId": "room-1781932716010"
                 },
                 {
@@ -41,8 +41,8 @@
                     "duration": 1,
                     "startWeek": 7,
                     "endWeek": 7,
-                    "startDate": "2026-02-09",
-                    "endDate": "2026-02-13",
+                    "startDate": "2027-02-09",
+                    "endDate": "2027-02-12",
                     "roomId": null
                 },
                 {
@@ -50,8 +50,8 @@
                     "duration": 3,
                     "startWeek": 8,
                     "endWeek": 10,
-                    "startDate": "2026-02-17",
-                    "endDate": "2026-03-06",
+                    "startDate": "2027-02-15",
+                    "endDate": "2027-03-05",
                     "roomId": "room-1781932716010"
                 },
                 {
@@ -59,26 +59,27 @@
                     "duration": 2,
                     "startWeek": 11,
                     "endWeek": 12,
-                    "startDate": "2026-03-09",
-                    "endDate": "2026-03-20",
+                    "startDate": "2027-03-08",
+                    "endDate": "2027-03-19",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1781932716010",
-            "startDate": "2026-01-26",
-            "endDate": "2026-03-20",
-            "group": "1"
+            "startDate": "2027-01-25",
+            "endDate": "2027-03-19",
+            "group": "5",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781931270488",
             "name": "신임(공채)",
             "capacity": 320,
-            "startRange": "2027-03-22",
+            "startRange": "2027-03-08",
             "endRange": "2027-06-30",
             "segments": [
                 {
                     "type": "face-to-face",
-                    "duration": 2
+                    "duration": 3
                 },
                 {
                     "type": "online",
@@ -86,11 +87,11 @@
                 },
                 {
                     "type": "face-to-face",
-                    "duration": 5
+                    "duration": 6
                 },
                 {
                     "type": "online",
-                    "duration": 2
+                    "duration": 3
                 },
                 {
                     "type": "face-to-face",
@@ -101,61 +102,62 @@
             "scheduleSegments": [
                 {
                     "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 13,
-                    "endWeek": 14,
-                    "startDate": "2026-03-23",
-                    "endDate": "2026-04-03",
+                    "duration": 3,
+                    "startWeek": 11,
+                    "endWeek": 13,
+                    "startDate": "2027-03-08",
+                    "endDate": "2027-03-26",
                     "roomId": "room-1"
                 },
                 {
                     "type": "online",
                     "duration": 2,
-                    "startWeek": 15,
-                    "endWeek": 16,
-                    "startDate": "2026-04-06",
-                    "endDate": "2026-04-17",
+                    "startWeek": 14,
+                    "endWeek": 15,
+                    "startDate": "2027-03-29",
+                    "endDate": "2027-04-09",
                     "roomId": null
                 },
                 {
                     "type": "face-to-face",
-                    "duration": 5,
-                    "startWeek": 17,
+                    "duration": 6,
+                    "startWeek": 16,
                     "endWeek": 21,
-                    "startDate": "2026-04-20",
-                    "endDate": "2026-05-22",
+                    "startDate": "2027-04-12",
+                    "endDate": "2027-05-21",
                     "roomId": "room-1"
                 },
                 {
                     "type": "online",
-                    "duration": 2,
+                    "duration": 3,
                     "startWeek": 22,
-                    "endWeek": 23,
-                    "startDate": "2026-05-26",
-                    "endDate": "2026-06-05",
+                    "endWeek": 24,
+                    "startDate": "2027-05-24",
+                    "endDate": "2027-06-11",
                     "roomId": null
                 },
                 {
                     "type": "face-to-face",
                     "duration": 2,
-                    "startWeek": 24,
-                    "endWeek": 25,
-                    "startDate": "2026-06-08",
-                    "endDate": "2026-06-19",
+                    "startWeek": 25,
+                    "endWeek": 26,
+                    "startDate": "2027-06-14",
+                    "endDate": "2027-06-25",
                     "roomId": "room-1"
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-03-23",
-            "endDate": "2026-06-19",
+            "startDate": "2027-03-08",
+            "endDate": "2027-06-25",
             "autoAdjustSequence": false,
-            "group": "1"
+            "group": "1",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781931485377",
             "name": "7급(공채1)",
-            "capacity": 300,
-            "startRange": "2027-02-02",
+            "capacity": 400,
+            "startRange": "2027-03-29",
             "endRange": "2027-06-30",
             "segments": [
                 {
@@ -165,10 +167,6 @@
                 {
                     "type": "online",
                     "duration": 2
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1
                 }
             ],
             "autoAdjustSequence": false,
@@ -177,91 +175,27 @@
                 {
                     "type": "face-to-face",
                     "duration": 2,
-                    "startWeek": 8,
-                    "endWeek": 9,
-                    "startDate": "2026-02-17",
-                    "endDate": "2026-02-27",
+                    "startWeek": 14,
+                    "endWeek": 15,
+                    "startDate": "2027-03-29",
+                    "endDate": "2027-04-09",
                     "roomId": "room-1"
                 },
                 {
                     "type": "online",
                     "duration": 2,
-                    "startWeek": 10,
-                    "endWeek": 11,
-                    "startDate": "2026-03-03",
-                    "endDate": "2026-03-13",
-                    "roomId": null
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 12,
-                    "endWeek": 12,
-                    "startDate": "2026-03-16",
-                    "endDate": "2026-03-20",
+                    "startWeek": 16,
+                    "endWeek": 17,
+                    "startDate": "2027-04-12",
+                    "endDate": "2027-04-23",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-02-17",
-            "endDate": "2026-03-20",
-            "group": "2"
-        },
-        {
-            "id": "c-1781931460523",
-            "name": "7급(지역)",
-            "capacity": 300,
-            "startRange": "2027-04-05",
-            "endRange": "2027-06-30",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
-                    "type": "online",
-                    "duration": 2
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1
-                }
-            ],
-            "autoAdjustSequence": false,
-            "scheduled": true,
-            "scheduleSegments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 15,
-                    "endWeek": 16,
-                    "startDate": "2026-04-06",
-                    "endDate": "2026-04-17",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 17,
-                    "endWeek": 18,
-                    "startDate": "2026-04-20",
-                    "endDate": "2026-05-01",
-                    "roomId": null
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 19,
-                    "endWeek": 19,
-                    "startDate": "2026-05-04",
-                    "endDate": "2026-05-08",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-1",
-            "startDate": "2026-04-06",
-            "endDate": "2026-05-08",
-            "group": "2"
+            "startDate": "2027-03-29",
+            "endDate": "2027-04-23",
+            "group": "2",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781931525423",
@@ -291,8 +225,8 @@
                     "duration": 2,
                     "startWeek": 22,
                     "endWeek": 23,
-                    "startDate": "2026-05-26",
-                    "endDate": "2026-06-05",
+                    "startDate": "2027-05-24",
+                    "endDate": "2027-06-04",
                     "roomId": "room-1"
                 },
                 {
@@ -300,8 +234,8 @@
                     "duration": 2,
                     "startWeek": 24,
                     "endWeek": 25,
-                    "startDate": "2026-06-08",
-                    "endDate": "2026-06-19",
+                    "startDate": "2027-06-07",
+                    "endDate": "2027-06-18",
                     "roomId": null
                 },
                 {
@@ -309,19 +243,20 @@
                     "duration": 1,
                     "startWeek": 26,
                     "endWeek": 26,
-                    "startDate": "2026-06-22",
-                    "endDate": "2026-06-26",
+                    "startDate": "2027-06-21",
+                    "endDate": "2027-06-25",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-05-26",
-            "endDate": "2026-06-26",
-            "group": "2"
+            "startDate": "2027-05-24",
+            "endDate": "2027-06-25",
+            "group": "2",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781932768426",
-            "name": "조기승진",
+            "name": "조기승진(1)",
             "capacity": 100,
             "startRange": "2027-01-10",
             "endRange": "2027-02-27",
@@ -347,8 +282,8 @@
                     "duration": 4,
                     "startWeek": 3,
                     "endWeek": 6,
-                    "startDate": "2026-01-12",
-                    "endDate": "2026-02-06",
+                    "startDate": "2027-01-11",
+                    "endDate": "2027-02-05",
                     "roomId": "room-2"
                 },
                 {
@@ -356,8 +291,8 @@
                     "duration": 1,
                     "startWeek": 7,
                     "endWeek": 7,
-                    "startDate": "2026-02-09",
-                    "endDate": "2026-02-13",
+                    "startDate": "2027-02-09",
+                    "endDate": "2027-02-12",
                     "roomId": null
                 },
                 {
@@ -365,15 +300,15 @@
                     "duration": 1,
                     "startWeek": 8,
                     "endWeek": 8,
-                    "startDate": "2026-02-17",
-                    "endDate": "2026-02-20",
+                    "startDate": "2027-02-15",
+                    "endDate": "2027-02-19",
                     "roomId": "room-2"
                 }
             ],
             "assignedRoomId": "room-2",
-            "startDate": "2026-01-12",
-            "endDate": "2026-02-20",
-            "group": "",
+            "startDate": "2027-01-11",
+            "endDate": "2027-02-19",
+            "group": "4",
             "preferredRoomId": "room-2"
         },
         {
@@ -389,11 +324,11 @@
                     "duration": 2
                 },
                 {
-                    "type": "face-to-face",
-                    "duration": 1
+                    "type": "online",
+                    "duration": 2
                 },
                 {
-                    "type": "online",
+                    "type": "face-to-face",
                     "duration": 2
                 },
                 {
@@ -409,48 +344,49 @@
                     "duration": 2,
                     "startWeek": 4,
                     "endWeek": 5,
-                    "startDate": "2026-01-19",
-                    "endDate": "2026-01-30",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 6,
-                    "endWeek": 6,
-                    "startDate": "2026-02-02",
-                    "endDate": "2026-02-06",
+                    "startDate": "2027-01-18",
+                    "endDate": "2027-01-29",
                     "roomId": "room-1"
                 },
                 {
                     "type": "online",
                     "duration": 2,
-                    "startWeek": 7,
-                    "endWeek": 8,
-                    "startDate": "2026-02-09",
-                    "endDate": "2026-02-20",
+                    "startWeek": 6,
+                    "endWeek": 7,
+                    "startDate": "2027-02-01",
+                    "endDate": "2027-02-12",
                     "roomId": null
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 8,
+                    "endWeek": 9,
+                    "startDate": "2027-02-15",
+                    "endDate": "2027-02-26",
+                    "roomId": "room-1"
                 },
                 {
                     "type": "cleanup",
                     "duration": 1,
-                    "startWeek": 9,
-                    "endWeek": 9,
-                    "startDate": "2026-02-23",
-                    "endDate": "2026-02-27",
+                    "startWeek": 10,
+                    "endWeek": 10,
+                    "startDate": "2027-03-02",
+                    "endDate": "2027-03-05",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-01-19",
-            "endDate": "2026-02-27"
+            "startDate": "2027-01-18",
+            "endDate": "2027-03-05",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781934384377",
             "name": "5급승진(2)",
-            "capacity": 400,
+            "capacity": 200,
             "group": "3",
-            "startRange": "2027-03-01",
+            "startRange": "2027-03-15",
             "endRange": "2027-11-27",
             "segments": [
                 {
@@ -458,16 +394,16 @@
                     "duration": 2
                 },
                 {
-                    "type": "face-to-face",
-                    "duration": 1
-                },
-                {
                     "type": "online",
                     "duration": 2
                 },
                 {
-                    "type": "cleanup",
+                    "type": "face-to-face",
                     "duration": 2
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1
                 }
             ],
             "autoAdjustSequence": false,
@@ -476,43 +412,44 @@
                 {
                     "type": "face-to-face",
                     "duration": 2,
-                    "startWeek": 10,
-                    "endWeek": 11,
-                    "startDate": "2026-03-03",
-                    "endDate": "2026-03-13",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
                     "startWeek": 12,
-                    "endWeek": 12,
-                    "startDate": "2026-03-16",
-                    "endDate": "2026-03-20",
-                    "roomId": "room-1"
+                    "endWeek": 13,
+                    "startDate": "2027-03-15",
+                    "endDate": "2027-03-26",
+                    "roomId": "room-2"
                 },
                 {
                     "type": "online",
                     "duration": 2,
-                    "startWeek": 13,
-                    "endWeek": 14,
-                    "startDate": "2026-03-23",
-                    "endDate": "2026-04-03",
+                    "startWeek": 14,
+                    "endWeek": 15,
+                    "startDate": "2027-03-29",
+                    "endDate": "2027-04-09",
                     "roomId": null
                 },
                 {
-                    "type": "cleanup",
+                    "type": "face-to-face",
                     "duration": 2,
-                    "startWeek": 15,
-                    "endWeek": 16,
-                    "startDate": "2026-04-06",
-                    "endDate": "2026-04-17",
+                    "startWeek": 16,
+                    "endWeek": 17,
+                    "startDate": "2027-04-12",
+                    "endDate": "2027-04-23",
+                    "roomId": "room-2"
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1,
+                    "startWeek": 18,
+                    "endWeek": 18,
+                    "startDate": "2027-04-26",
+                    "endDate": "2027-04-30",
                     "roomId": null
                 }
             ],
-            "assignedRoomId": "room-1",
-            "startDate": "2026-03-03",
-            "endDate": "2026-04-17"
+            "assignedRoomId": "room-2",
+            "startDate": "2027-03-15",
+            "endDate": "2027-04-30",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781934711883",
@@ -532,7 +469,7 @@
                 },
                 {
                     "type": "face-to-face",
-                    "duration": 1
+                    "duration": 2
                 },
                 {
                     "type": "cleanup",
@@ -544,113 +481,45 @@
             "scheduleSegments": [
                 {
                     "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 17,
-                    "endWeek": 18,
-                    "startDate": "2026-04-20",
-                    "endDate": "2026-05-01",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "online",
                     "duration": 2,
                     "startWeek": 19,
                     "endWeek": 20,
-                    "startDate": "2026-05-04",
-                    "endDate": "2026-05-15",
-                    "roomId": null
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 21,
-                    "endWeek": 21,
-                    "startDate": "2026-05-18",
-                    "endDate": "2026-05-22",
+                    "startDate": "2027-05-03",
+                    "endDate": "2027-05-14",
                     "roomId": "room-2"
                 },
                 {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 22,
-                    "endWeek": 22,
-                    "startDate": "2026-05-26",
-                    "endDate": "2026-05-29",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-2",
-            "startDate": "2026-04-20",
-            "endDate": "2026-05-29"
-        },
-        {
-            "id": "c-1781934747091",
-            "name": "5급승진(4)",
-            "capacity": 200,
-            "group": "3",
-            "startRange": "2027-05-31",
-            "endRange": "2027-11-27",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
                     "type": "online",
-                    "duration": 2
+                    "duration": 2,
+                    "startWeek": 21,
+                    "endWeek": 22,
+                    "startDate": "2027-05-17",
+                    "endDate": "2027-05-28",
+                    "roomId": null
                 },
-                {
-                    "type": "face-to-face",
-                    "duration": 1
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 2
-                }
-            ],
-            "autoAdjustSequence": true,
-            "scheduled": true,
-            "scheduleSegments": [
                 {
                     "type": "face-to-face",
                     "duration": 2,
                     "startWeek": 23,
                     "endWeek": 24,
-                    "startDate": "2026-06-01",
-                    "endDate": "2026-06-12",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 25,
-                    "endWeek": 26,
-                    "startDate": "2026-06-15",
-                    "endDate": "2026-06-26",
-                    "roomId": null
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 27,
-                    "endWeek": 27,
-                    "startDate": "2026-06-29",
-                    "endDate": "2026-07-03",
+                    "startDate": "2027-05-31",
+                    "endDate": "2027-06-11",
                     "roomId": "room-2"
                 },
                 {
                     "type": "cleanup",
-                    "duration": 2,
-                    "startWeek": 28,
-                    "endWeek": 29,
-                    "startDate": "2026-07-06",
-                    "endDate": "2026-07-17",
+                    "duration": 1,
+                    "startWeek": 25,
+                    "endWeek": 25,
+                    "startDate": "2027-06-14",
+                    "endDate": "2027-06-18",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-2",
-            "startDate": "2026-06-01",
-            "endDate": "2026-07-17"
+            "startDate": "2027-05-03",
+            "endDate": "2027-06-18",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781948867133",
@@ -681,8 +550,8 @@
                     "duration": 2,
                     "startWeek": 27,
                     "endWeek": 28,
-                    "startDate": "2026-06-29",
-                    "endDate": "2026-07-10",
+                    "startDate": "2027-06-28",
+                    "endDate": "2027-07-09",
                     "roomId": "room-1"
                 },
                 {
@@ -690,8 +559,8 @@
                     "duration": 2,
                     "startWeek": 29,
                     "endWeek": 30,
-                    "startDate": "2026-07-13",
-                    "endDate": "2026-07-24",
+                    "startDate": "2027-07-12",
+                    "endDate": "2027-07-23",
                     "roomId": null
                 },
                 {
@@ -699,21 +568,22 @@
                     "duration": 1,
                     "startWeek": 31,
                     "endWeek": 31,
-                    "startDate": "2026-07-27",
-                    "endDate": "2026-07-31",
+                    "startDate": "2027-07-26",
+                    "endDate": "2027-07-30",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-06-29",
-            "endDate": "2026-07-31"
+            "startDate": "2027-06-28",
+            "endDate": "2027-07-30",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781949855848",
             "name": "9급(공채1)",
             "capacity": 350,
             "group": "2",
-            "startRange": "2027-09-20",
+            "startRange": "2027-10-11",
             "endRange": "2027-11-27",
             "segments": [
                 {
@@ -726,7 +596,7 @@
                 },
                 {
                     "type": "cleanup",
-                    "duration": 2
+                    "duration": 1
                 }
             ],
             "autoAdjustSequence": true,
@@ -735,34 +605,79 @@
                 {
                     "type": "face-to-face",
                     "duration": 2,
-                    "startWeek": 39,
-                    "endWeek": 40,
-                    "startDate": "2026-09-21",
-                    "endDate": "2026-10-02",
+                    "startWeek": 42,
+                    "endWeek": 43,
+                    "startDate": "2027-10-11",
+                    "endDate": "2027-10-22",
                     "roomId": "room-1"
                 },
                 {
                     "type": "online",
                     "duration": 2,
-                    "startWeek": 41,
-                    "endWeek": 42,
-                    "startDate": "2026-10-06",
-                    "endDate": "2026-10-16",
+                    "startWeek": 44,
+                    "endWeek": 45,
+                    "startDate": "2027-10-25",
+                    "endDate": "2027-11-05",
                     "roomId": null
                 },
                 {
                     "type": "cleanup",
-                    "duration": 2,
-                    "startWeek": 43,
-                    "endWeek": 44,
-                    "startDate": "2026-10-19",
-                    "endDate": "2026-10-30",
+                    "duration": 1,
+                    "startWeek": 46,
+                    "endWeek": 46,
+                    "startDate": "2027-11-08",
+                    "endDate": "2027-11-12",
                     "roomId": null
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-09-21",
-            "endDate": "2026-10-30"
+            "startDate": "2027-10-11",
+            "endDate": "2027-11-12",
+            "preferredRoomId": null
+        },
+        {
+            "id": "c-1782209359378",
+            "name": "7급(지역)",
+            "capacity": 160,
+            "group": "2",
+            "startRange": "2027-03-01",
+            "endRange": "2027-11-27",
+            "segments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "online",
+                    "duration": 2
+                }
+            ],
+            "autoAdjustSequence": false,
+            "preferredRoomId": null,
+            "scheduled": true,
+            "scheduleSegments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 10,
+                    "endWeek": 11,
+                    "startDate": "2027-03-02",
+                    "endDate": "2027-03-12",
+                    "roomId": "room-2"
+                },
+                {
+                    "type": "online",
+                    "duration": 2,
+                    "startWeek": 12,
+                    "endWeek": 13,
+                    "startDate": "2027-03-15",
+                    "endDate": "2027-03-26",
+                    "roomId": null
+                }
+            ],
+            "assignedRoomId": "room-2",
+            "startDate": "2027-03-02",
+            "endDate": "2027-03-26"
         },
         {
             "id": "c-1781949965736",
@@ -779,276 +694,9 @@
                 {
                     "type": "online",
                     "duration": 2
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 2
                 }
             ],
-            "autoAdjustSequence": true,
-            "scheduled": true,
-            "scheduleSegments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 45,
-                    "endWeek": 46,
-                    "startDate": "2026-11-02",
-                    "endDate": "2026-11-13",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 47,
-                    "endWeek": 48,
-                    "startDate": "2026-11-16",
-                    "endDate": "2026-11-27",
-                    "roomId": null
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 2,
-                    "startWeek": 49,
-                    "endWeek": 50,
-                    "startDate": "2026-11-30",
-                    "endDate": "2026-12-11",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-1",
-            "startDate": "2026-11-02",
-            "endDate": "2026-12-11"
-        },
-        {
-            "id": "c-1781950139658",
-            "name": "5급승진(5)",
-            "capacity": 300,
-            "group": "3",
-            "startRange": "2027-07-19",
-            "endRange": "2027-11-27",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
-                    "type": "online",
-                    "duration": 2
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1
-                }
-            ],
-            "autoAdjustSequence": true,
-            "scheduled": true,
-            "scheduleSegments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 30,
-                    "endWeek": 31,
-                    "startDate": "2026-07-20",
-                    "endDate": "2026-07-31",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 32,
-                    "endWeek": 33,
-                    "startDate": "2026-08-03",
-                    "endDate": "2026-08-14",
-                    "roomId": null
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 34,
-                    "endWeek": 34,
-                    "startDate": "2026-08-18",
-                    "endDate": "2026-08-21",
-                    "roomId": "room-1"
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 35,
-                    "endWeek": 35,
-                    "startDate": "2026-08-24",
-                    "endDate": "2026-08-28",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-1",
-            "startDate": "2026-07-20",
-            "endDate": "2026-08-28"
-        },
-        {
-            "id": "c-1781950692649",
-            "name": "5급승진(6)",
-            "capacity": 250,
-            "group": "3",
-            "startRange": "2027-03-02",
-            "endRange": "2027-11-27",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
-                    "type": "online",
-                    "duration": 2
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1
-                }
-            ],
-            "autoAdjustSequence": true,
-            "scheduled": true,
-            "scheduleSegments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 36,
-                    "endWeek": 37,
-                    "startDate": "2026-08-31",
-                    "endDate": "2026-09-11",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 38,
-                    "endWeek": 39,
-                    "startDate": "2026-09-14",
-                    "endDate": "2026-09-25",
-                    "roomId": null
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 40,
-                    "endWeek": 40,
-                    "startDate": "2026-09-29",
-                    "endDate": "2026-10-02",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 41,
-                    "endWeek": 41,
-                    "startDate": "2026-10-06",
-                    "endDate": "2026-10-09",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-2",
-            "startDate": "2026-08-31",
-            "endDate": "2026-10-09"
-        },
-        {
-            "id": "c-1781950816919",
-            "name": "5급승진(7)",
-            "capacity": 250,
-            "group": "3",
-            "startRange": "2027-03-02",
-            "endRange": "2027-11-27",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
-                    "type": "online",
-                    "duration": 2
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1
-                }
-            ],
-            "autoAdjustSequence": true,
-            "scheduled": true,
-            "scheduleSegments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2,
-                    "startWeek": 42,
-                    "endWeek": 43,
-                    "startDate": "2026-10-12",
-                    "endDate": "2026-10-23",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "online",
-                    "duration": 2,
-                    "startWeek": 44,
-                    "endWeek": 45,
-                    "startDate": "2026-10-26",
-                    "endDate": "2026-11-06",
-                    "roomId": null
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 46,
-                    "endWeek": 46,
-                    "startDate": "2026-11-09",
-                    "endDate": "2026-11-13",
-                    "roomId": "room-2"
-                },
-                {
-                    "type": "cleanup",
-                    "duration": 1,
-                    "startWeek": 47,
-                    "endWeek": 47,
-                    "startDate": "2026-11-16",
-                    "endDate": "2026-11-20",
-                    "roomId": null
-                }
-            ],
-            "assignedRoomId": "room-2",
-            "startDate": "2026-10-12",
-            "endDate": "2026-11-20"
-        },
-        {
-            "id": "c-1781950953049",
-            "name": "5급승진(8)",
-            "capacity": 400,
-            "group": "3",
-            "startRange": "2027-11-22",
-            "endRange": "2027-12-31",
-            "segments": [
-                {
-                    "type": "face-to-face",
-                    "duration": 2
-                },
-                {
-                    "type": "online",
-                    "duration": 2
-                },
-                {
-                    "type": "face-to-face",
-                    "duration": 1
-                }
-            ],
-            "autoAdjustSequence": true,
+            "autoAdjustSequence": false,
             "scheduled": true,
             "scheduleSegments": [
                 {
@@ -1056,8 +704,8 @@
                     "duration": 2,
                     "startWeek": 48,
                     "endWeek": 49,
-                    "startDate": "2026-11-23",
-                    "endDate": "2026-12-04",
+                    "startDate": "2027-11-22",
+                    "endDate": "2027-12-03",
                     "roomId": "room-1"
                 },
                 {
@@ -1065,30 +713,219 @@
                     "duration": 2,
                     "startWeek": 50,
                     "endWeek": 51,
-                    "startDate": "2026-12-07",
-                    "endDate": "2026-12-18",
+                    "startDate": "2027-12-06",
+                    "endDate": "2027-12-17",
+                    "roomId": null
+                }
+            ],
+            "assignedRoomId": "room-1",
+            "startDate": "2027-11-22",
+            "endDate": "2027-12-17",
+            "preferredRoomId": null
+        },
+        {
+            "id": "c-1781950692649",
+            "name": "5급승진(4)",
+            "capacity": 250,
+            "group": "3",
+            "startRange": "2027-03-02",
+            "endRange": "2027-11-27",
+            "segments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "online",
+                    "duration": 2
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                }
+            ],
+            "autoAdjustSequence": false,
+            "scheduled": true,
+            "scheduleSegments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 29,
+                    "endWeek": 30,
+                    "startDate": "2027-07-12",
+                    "endDate": "2027-07-23",
+                    "roomId": "room-1"
+                },
+                {
+                    "type": "online",
+                    "duration": 2,
+                    "startWeek": 31,
+                    "endWeek": 32,
+                    "startDate": "2027-07-26",
+                    "endDate": "2027-08-06",
                     "roomId": null
                 },
                 {
                     "type": "face-to-face",
-                    "duration": 1,
-                    "startWeek": 52,
-                    "endWeek": 52,
-                    "startDate": "2026-12-21",
-                    "endDate": "2026-12-25",
+                    "duration": 2,
+                    "startWeek": 33,
+                    "endWeek": 34,
+                    "startDate": "2027-08-09",
+                    "endDate": "2027-08-20",
                     "roomId": "room-1"
                 }
             ],
             "assignedRoomId": "room-1",
-            "startDate": "2026-11-23",
-            "endDate": "2026-12-25"
+            "startDate": "2027-07-12",
+            "endDate": "2027-08-20",
+            "preferredRoomId": null
+        },
+        {
+            "id": "c-1781950139658",
+            "name": "5급승진(5)",
+            "capacity": 400,
+            "group": "3",
+            "startRange": "2027-08-30",
+            "endRange": "2027-11-27",
+            "segments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "online",
+                    "duration": 2
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1
+                }
+            ],
+            "autoAdjustSequence": false,
+            "scheduled": true,
+            "scheduleSegments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 36,
+                    "endWeek": 37,
+                    "startDate": "2027-08-30",
+                    "endDate": "2027-09-10",
+                    "roomId": "room-1"
+                },
+                {
+                    "type": "online",
+                    "duration": 2,
+                    "startWeek": 38,
+                    "endWeek": 39,
+                    "startDate": "2027-09-13",
+                    "endDate": "2027-09-24",
+                    "roomId": null
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 40,
+                    "endWeek": 41,
+                    "startDate": "2027-09-27",
+                    "endDate": "2027-10-08",
+                    "roomId": "room-1"
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1,
+                    "startWeek": 42,
+                    "endWeek": 42,
+                    "startDate": "2027-10-11",
+                    "endDate": "2027-10-15",
+                    "roomId": null
+                }
+            ],
+            "assignedRoomId": "room-1",
+            "startDate": "2027-08-30",
+            "endDate": "2027-10-15",
+            "preferredRoomId": null
+        },
+        {
+            "id": "c-1781950816919",
+            "name": "5급승진(6)",
+            "capacity": 400,
+            "group": "3",
+            "startRange": "2027-11-08",
+            "endRange": "2027-12-27",
+            "segments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "online",
+                    "duration": 2
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1
+                }
+            ],
+            "autoAdjustSequence": false,
+            "scheduled": true,
+            "scheduleSegments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 46,
+                    "endWeek": 47,
+                    "startDate": "2027-11-08",
+                    "endDate": "2027-11-19",
+                    "roomId": "room-1"
+                },
+                {
+                    "type": "online",
+                    "duration": 2,
+                    "startWeek": 48,
+                    "endWeek": 49,
+                    "startDate": "2027-11-22",
+                    "endDate": "2027-12-03",
+                    "roomId": null
+                },
+                {
+                    "type": "face-to-face",
+                    "duration": 2,
+                    "startWeek": 50,
+                    "endWeek": 51,
+                    "startDate": "2027-12-06",
+                    "endDate": "2027-12-17",
+                    "roomId": "room-1"
+                },
+                {
+                    "type": "cleanup",
+                    "duration": 1,
+                    "startWeek": 52,
+                    "endWeek": 52,
+                    "startDate": "2027-12-20",
+                    "endDate": "2027-12-24",
+                    "roomId": null
+                }
+            ],
+            "assignedRoomId": "room-1",
+            "startDate": "2027-11-08",
+            "endDate": "2027-12-24",
+            "preferredRoomId": null
         },
         {
             "id": "c-1781951108732",
             "name": "중증경채",
             "capacity": 50,
             "group": "1",
-            "startRange": "2027-11-02",
+            "startRange": "2027-11-22",
             "endRange": "2027-12-27",
             "segments": [
                 {
@@ -1102,16 +939,48 @@
                 {
                     "type": "face-to-face",
                     "duration": 3,
-                    "startWeek": 45,
-                    "endWeek": 47,
-                    "startDate": "2026-11-02",
-                    "endDate": "2026-11-20",
+                    "startWeek": 48,
+                    "endWeek": 50,
+                    "startDate": "2027-11-22",
+                    "endDate": "2027-12-10",
                     "roomId": "room-1781932716010"
                 }
             ],
             "assignedRoomId": "room-1781932716010",
-            "startDate": "2026-11-02",
-            "endDate": "2026-11-20"
+            "startDate": "2027-11-22",
+            "endDate": "2027-12-10",
+            "preferredRoomId": null
+        },
+        {
+            "id": "c-1782104885034",
+            "name": "조기승진(2)",
+            "capacity": 100,
+            "group": "4",
+            "startRange": "2027-10-11",
+            "endRange": "2027-12-27",
+            "segments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 6
+                }
+            ],
+            "autoAdjustSequence": true,
+            "preferredRoomId": "room-2",
+            "scheduled": true,
+            "scheduleSegments": [
+                {
+                    "type": "face-to-face",
+                    "duration": 6,
+                    "startWeek": 42,
+                    "endWeek": 47,
+                    "startDate": "2027-10-11",
+                    "endDate": "2027-11-19",
+                    "roomId": "room-2"
+                }
+            ],
+            "assignedRoomId": "room-2",
+            "startDate": "2027-10-11",
+            "endDate": "2027-11-19"
         }
     ],
     "rooms": [
@@ -1123,7 +992,7 @@
         {
             "id": "room-2",
             "name": "1층대강당",
-            "seats": 250
+            "seats": 200
         },
         {
             "id": "room-1781932716010",
@@ -1150,22 +1019,31 @@
     "year": 2027,
     "jsPreprocessedSorted": [
         {
-            "id": "c-1781950953049",
-            "name": "5급승진(8)",
+            "id": "c-1781950816919",
+            "name": "5급승진(6)",
             "capacity": 400,
-            "startWeek": 48,
+            "startWeek": 46,
             "endWeek": 53,
             "windowSize": 0,
-            "totalDuration": 5
+            "totalDuration": 7
         },
         {
-            "id": "c-1781934384377",
-            "name": "5급승진(2)",
+            "id": "c-1781950139658",
+            "name": "5급승진(5)",
             "capacity": 400,
-            "startWeek": 10,
+            "startWeek": 36,
             "endWeek": 48,
-            "windowSize": 31,
+            "windowSize": 5,
             "totalDuration": 7
+        },
+        {
+            "id": "c-1781931485377",
+            "name": "7급(공채1)",
+            "capacity": 400,
+            "startWeek": 14,
+            "endWeek": 27,
+            "windowSize": 9,
+            "totalDuration": 4
         },
         {
             "id": "c-1781933356458",
@@ -1173,17 +1051,17 @@
             "capacity": 400,
             "startWeek": 4,
             "endWeek": 48,
-            "windowSize": 38,
-            "totalDuration": 6
+            "windowSize": 37,
+            "totalDuration": 7
         },
         {
             "id": "c-1781949855848",
             "name": "9급(공채1)",
             "capacity": 350,
-            "startWeek": 39,
+            "startWeek": 42,
             "endWeek": 48,
-            "windowSize": 3,
-            "totalDuration": 6
+            "windowSize": 1,
+            "totalDuration": 5
         },
         {
             "id": "c-1781949965736",
@@ -1191,17 +1069,17 @@
             "capacity": 350,
             "startWeek": 40,
             "endWeek": 53,
-            "windowSize": 7,
-            "totalDuration": 6
+            "windowSize": 9,
+            "totalDuration": 4
         },
         {
             "id": "c-1781931270488",
             "name": "신임(공채)",
             "capacity": 320,
-            "startWeek": 13,
+            "startWeek": 11,
             "endWeek": 27,
-            "windowSize": 1,
-            "totalDuration": 13
+            "windowSize": 0,
+            "totalDuration": 16
         },
         {
             "id": "c-1781931525423",
@@ -1210,33 +1088,6 @@
             "startWeek": 20,
             "endWeek": 27,
             "windowSize": 2,
-            "totalDuration": 5
-        },
-        {
-            "id": "c-1781931460523",
-            "name": "7급(지역)",
-            "capacity": 300,
-            "startWeek": 15,
-            "endWeek": 27,
-            "windowSize": 7,
-            "totalDuration": 5
-        },
-        {
-            "id": "c-1781950139658",
-            "name": "5급승진(5)",
-            "capacity": 300,
-            "startWeek": 30,
-            "endWeek": 48,
-            "windowSize": 12,
-            "totalDuration": 6
-        },
-        {
-            "id": "c-1781931485377",
-            "name": "7급(공채1)",
-            "capacity": 300,
-            "startWeek": 6,
-            "endWeek": 27,
-            "windowSize": 16,
             "totalDuration": 5
         },
         {
@@ -1250,29 +1101,20 @@
         },
         {
             "id": "c-1781950692649",
-            "name": "5급승진(6)",
-            "capacity": 250,
-            "startWeek": 10,
-            "endWeek": 48,
-            "windowSize": 32,
-            "totalDuration": 6
-        },
-        {
-            "id": "c-1781950816919",
-            "name": "5급승진(7)",
-            "capacity": 250,
-            "startWeek": 10,
-            "endWeek": 48,
-            "windowSize": 32,
-            "totalDuration": 6
-        },
-        {
-            "id": "c-1781934747091",
             "name": "5급승진(4)",
-            "capacity": 200,
-            "startWeek": 23,
+            "capacity": 250,
+            "startWeek": 10,
             "endWeek": 48,
-            "windowSize": 18,
+            "windowSize": 32,
+            "totalDuration": 6
+        },
+        {
+            "id": "c-1781934384377",
+            "name": "5급승진(2)",
+            "capacity": 200,
+            "startWeek": 12,
+            "endWeek": 48,
+            "windowSize": 29,
             "totalDuration": 7
         },
         {
@@ -1281,12 +1123,21 @@
             "capacity": 200,
             "startWeek": 10,
             "endWeek": 48,
-            "windowSize": 32,
-            "totalDuration": 6
+            "windowSize": 31,
+            "totalDuration": 7
+        },
+        {
+            "id": "c-1782209359378",
+            "name": "7급(지역)",
+            "capacity": 160,
+            "startWeek": 10,
+            "endWeek": 48,
+            "windowSize": 34,
+            "totalDuration": 4
         },
         {
             "id": "c-1781932768426",
-            "name": "조기승진",
+            "name": "조기승진(1)",
             "capacity": 100,
             "startWeek": 2,
             "endWeek": 9,
@@ -1294,29 +1145,38 @@
             "totalDuration": 6
         },
         {
+            "id": "c-1782104885034",
+            "name": "조기승진(2)",
+            "capacity": 100,
+            "startWeek": 42,
+            "endWeek": 53,
+            "windowSize": 5,
+            "totalDuration": 6
+        },
+        {
             "id": "c-1781931931568",
             "name": "신임(경채)",
             "capacity": 60,
-            "startWeek": 4,
+            "startWeek": 6,
             "endWeek": 14,
-            "windowSize": 2,
+            "windowSize": 0,
             "totalDuration": 8
         },
         {
             "id": "c-1781951108732",
             "name": "중증경채",
             "capacity": 50,
-            "startWeek": 45,
+            "startWeek": 48,
             "endWeek": 53,
-            "windowSize": 5,
+            "windowSize": 2,
             "totalDuration": 3
         }
     ],
     "result": {
         "conflicts": [],
-        "scheduledCount": 18,
-        "totalCount": 18,
+        "scheduledCount": 17,
+        "totalCount": 17,
         "hitMaxSteps": false,
-        "searchSteps": 193
+        "searchSteps": 502
     }
 }

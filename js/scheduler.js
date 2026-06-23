@@ -160,16 +160,8 @@ export function generateSchedule(courses, rooms, year = 2026, blockedWeeks = [])
         };
     });
 
-    // 우선순위 정렬 (휴리스틱): 여유가 좁거나 크기가 큰 과정부터 먼저 대입 시도하여 가지치기 효율 극대화
-    processedCourses.sort((a, b) => {
-        if (b.capacity !== a.capacity) {
-            return b.capacity - a.capacity;
-        }
-        if (a.windowSize !== b.windowSize) {
-            return a.windowSize - b.windowSize;
-        }
-        return b.totalDuration - a.totalDuration;
-    });
+    // 우선순위 정렬: 목록 순서가 앞선 과정이 충돌 시 우선권을 갖도록 리스트 순서(listOrder) 기준으로 오름차순 정렬
+    processedCourses.sort((a, b) => a.listOrder - b.listOrder);
 
     // 글로벌 최적 조합 탐색용 상태 기억 변수
     let bestScheduledCount = -1;
@@ -269,26 +261,7 @@ export function generateSchedule(courses, rooms, year = 2026, blockedWeeks = [])
                     continue; // 희망 기간 이탈
                 }
 
-                // 같은 그룹 내 리스트 순서에 따른 일정 시작 주차 순서 제약 조건 검증
-                let violatesGroupOrder = false;
-                if (course.group) {
-                    const grp = course.group.trim();
-                    if (grp) {
-                        for (const alloc of currentAllocations) {
-                            if (alloc.scheduled && alloc.group && alloc.group.trim() === grp) {
-                                if (alloc.listOrder < course.listOrder && w <= alloc.bestStartWeek) {
-                                    violatesGroupOrder = true;
-                                    break;
-                                }
-                                if (alloc.listOrder > course.listOrder && w >= alloc.bestStartWeek) {
-                                    violatesGroupOrder = true;
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-                if (violatesGroupOrder) continue;
+                // 같은 그룹 내 리스트 순서에 따른 일정 시작 주차 순서 제약 조건 검증 (제거됨: 목록 순서는 우선순위로만 작동)
 
                 // 그룹 중복 운영 방지 체크
                 let hasGroupOverlap = false;

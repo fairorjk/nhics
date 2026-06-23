@@ -902,7 +902,7 @@ function generateGanttHalfHTML(startW, endW, onlineSegs, onlineRowHeight) {
     
     // 온라인 행 추가 (동적 높이 적용)
     yHeaderHTML += `
-        <div class="gantt-row-label" style="background: rgba(8, 145, 178, 0.05); height: ${onlineRowHeight}px; transition: height var(--transition-fast); justify-content: flex-start; padding-top: 10px;">
+        <div class="gantt-row-label" style="background: linear-gradient(rgba(8, 145, 178, 0.05), rgba(8, 145, 178, 0.05)), #0f172a; height: ${onlineRowHeight}px; transition: height var(--transition-fast); justify-content: flex-start; padding-top: 10px;">
             <span class="gantt-row-title" style="color: var(--secondary);">온라인 교육</span>
             <span class="gantt-row-subtitle">강의실 불필요</span>
         </div>
@@ -1592,7 +1592,7 @@ function exportDataToFile() {
     const dateStr = `${yyyy}${mm}${dd}`;
 
     const link = document.createElement('a');
-    link.download = `nhi_scheduler_data_${state.year}_${dateStr}.json`;
+    link.download = `NHI_${state.year}_${dateStr}.json`;
     link.href = url;
     document.body.appendChild(link);
     link.click();
@@ -1643,8 +1643,15 @@ function importDataFromFile(e) {
 function saveChartAsImage() {
     const isGantt = state.currentView === 'gantt';
     const targetElement = isGantt ? dom.ganttView : dom.calendarView;
-    const viewName = isGantt ? 'Gantt_Chart' : 'Monthly_Calendar';
-    const fileName = `NHI_Course_Scheduler_${viewName}_${state.year}.png`;
+    
+    // YYYYMMDD 형식의 날짜 구하기
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const dateStr = `${yyyy}${mm}${dd}`;
+    
+    const fileName = `NHI_${state.year}_${dateStr}.png`;
     
     const btnText = dom.btnSaveImage.querySelector('span');
     const originalText = btnText.innerText;
