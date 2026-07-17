@@ -1,5 +1,63 @@
 /* CSS Custom Properties for Design System */
 :root {
+    /* Light Theme (Default) */
+    --bg-app: #f8fafc;
+    --bg-card: rgba(255, 255, 255, 0.75);
+    --bg-card-hover: rgba(255, 255, 255, 0.9);
+    --border-color: rgba(15, 23, 42, 0.08);
+    --border-focus: rgba(124, 58, 237, 0.4);
+    
+    --primary: #7c3aed;
+    --primary-glow: rgba(124, 58, 237, 0.12);
+    --primary-hover: #6d28d9;
+    
+    --secondary: #0891b2;
+    --secondary-glow: rgba(8, 145, 178, 0.12);
+    
+    --success: #059669;
+    --success-glow: rgba(5, 150, 105, 0.12);
+    
+    --warning: #d97706;
+    --danger: #e11d48;
+    --danger-glow: rgba(225, 29, 72, 0.12);
+    
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --text-dark: #94a3b8;
+    
+    --bg-sticky-header: #f1f5f9;
+    --bg-select-option: #ffffff;
+    --bg-section-inner: rgba(15, 23, 42, 0.04);
+    --bg-btn-hover: rgba(15, 23, 42, 0.06);
+    --bg-input: rgba(15, 23, 42, 0.03);
+    --bg-tooltip: rgba(255, 255, 255, 0.95);
+    --border-tooltip: rgba(15, 23, 42, 0.1);
+    
+    --glow-1: rgba(124, 58, 237, 0.04);
+    --glow-2: rgba(8, 145, 178, 0.04);
+    
+    --bg-scrollbar-track: rgba(15, 23, 42, 0.02);
+    --bg-scrollbar-thumb: rgba(15, 23, 42, 0.15);
+    --bg-scrollbar-thumb-hover: rgba(15, 23, 42, 0.3);
+    
+    --title-color: #0369a1;
+    --bg-online-row: #f1f5f9;
+    --bg-x-header: #f1f5f9;
+    --color-online-text: #334155;
+    --bg-header: rgba(224, 242, 254, 0.55);
+    --bg-gantt-content: #ffffff;
+    --border-gantt-line: rgba(15, 23, 42, 0.06);
+    --border-gantt-month: rgba(15, 23, 42, 0.15);
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'Outfit', monospace;
+    
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-theme {
+    /* Dark Theme */
     --bg-app: #080c15;
     --bg-card: rgba(15, 23, 42, 0.6);
     --bg-card-hover: rgba(30, 41, 59, 0.7);
@@ -24,11 +82,29 @@
     --text-muted: #94a3b8;
     --text-dark: #64748b;
     
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --font-mono: 'Outfit', monospace;
+    --bg-sticky-header: #0f172a;
+    --bg-select-option: #0f172a;
+    --bg-section-inner: rgba(0, 0, 0, 0.2);
+    --bg-btn-hover: rgba(255, 255, 255, 0.08);
+    --bg-input: rgba(255, 255, 255, 0.05);
+    --bg-tooltip: rgba(15, 23, 42, 0.95);
+    --border-tooltip: rgba(255, 255, 255, 0.15);
     
-    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glow-1: rgba(139, 92, 246, 0.08);
+    --glow-2: rgba(6, 182, 212, 0.08);
+    
+    --bg-scrollbar-track: rgba(255, 255, 255, 0.02);
+    --bg-scrollbar-thumb: rgba(255, 255, 255, 0.12);
+    --bg-scrollbar-thumb-hover: rgba(255, 255, 255, 0.25);
+
+    --title-color: #bae6fd;
+    --bg-online-row: #111827;
+    --bg-x-header: #0f172a;
+    --color-online-text: #cbd5e1;
+    --bg-header: rgba(15, 23, 42, 0.3);
+    --bg-gantt-content: rgba(15, 23, 42, 0.4);
+    --border-gantt-line: rgba(255, 255, 255, 0.05);
+    --border-gantt-month: rgba(255, 255, 255, 0.15);
 }
 
 /* Base Styles */
@@ -49,8 +125,8 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     background-image: 
-        radial-gradient(circle at 10% 10%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 10% 10%, var(--glow-1) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, var(--glow-2) 0%, transparent 40%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -61,15 +137,15 @@ body {
     height: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--bg-scrollbar-track);
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.12);
+    background: var(--bg-scrollbar-thumb);
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--bg-scrollbar-thumb-hover);
 }
 
 /* Glassmorphism Common styles */
@@ -95,7 +171,7 @@ h1, h2, h3, h4 {
 
 /* Layout */
 .app-container {
-    max-width: 1600px;
+    max-width: 2034px; /* Sidebar (380px) + Gap (14px) + Content (1600px) + Padding (40px) */
     margin: 0 auto;
     padding: 16px 20px;
     display: flex;
@@ -110,7 +186,7 @@ h1, h2, h3, h4 {
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    background: rgba(15, 23, 42, 0.3);
+    background: var(--bg-header);
     backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid var(--border-color);
@@ -130,6 +206,7 @@ h1, h2, h3, h4 {
     font-size: 20px;
     font-family: var(--font-mono);
     font-weight: 700;
+    color: var(--title-color);
 }
 .logo-area h1 span {
     color: var(--secondary);
@@ -152,7 +229,7 @@ h1, h2, h3, h4 {
     white-space: nowrap;
 }
 .year-dropdown {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-input);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 6px 12px;
@@ -166,10 +243,10 @@ h1, h2, h3, h4 {
 }
 .year-dropdown:focus, .year-dropdown:hover {
     border-color: var(--primary);
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--bg-btn-hover);
 }
 .year-dropdown option {
-    background: #0f172a;
+    background: var(--bg-select-option);
     color: var(--text-main);
 }
 
@@ -228,7 +305,7 @@ h1, h2, h3, h4 {
     transition: all var(--transition-fast);
 }
 .btn-icon:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--bg-btn-hover);
     color: var(--text-main);
 }
 .btn-text {
@@ -247,7 +324,7 @@ h1, h2, h3, h4 {
 /* Layout Grid */
 .top-config-panel {
     display: grid;
-    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 14px;
     margin-bottom: 14px;
 }
@@ -270,7 +347,12 @@ h1, h2, h3, h4 {
     display: grid;
     grid-template-columns: 380px 1fr;
     gap: 14px;
-    align-items: start;
+    align-items: stretch;
+}
+.right-content-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 @media (max-width: 1100px) {
@@ -287,10 +369,15 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    height: 100%;
 }
 .sidebar .glass-card.courses-card {
     padding: 14px 16px;
     border-radius: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .sidebar .card-header {
     margin-bottom: 8px;
@@ -352,7 +439,7 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-height: 1000px;
+    flex-grow: 1;
     overflow-y: auto;
     padding-right: 4px;
 }
@@ -694,6 +781,10 @@ h1, h2, h3, h4 {
     flex-direction: column;
     gap: 20px;
     padding: 16px;
+    width: max-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .gantt-container.hidden {
     display: none;
@@ -747,7 +838,7 @@ h1, h2, h3, h4 {
 
 /* Gantt Header Columns */
 .gantt-y-header {
-    background: #0f172a;
+    background: var(--bg-sticky-header);
     border-right: 1px solid var(--border-color);
     position: sticky;
     left: 0;
@@ -762,7 +853,7 @@ h1, h2, h3, h4 {
     color: var(--text-muted);
     font-weight: 500;
     border-bottom: 1px solid var(--border-color);
-    background: #0f172a;
+    background: var(--bg-sticky-header);
 }
 .gantt-row-label {
     height: 80px;
@@ -771,7 +862,7 @@ h1, h2, h3, h4 {
     justify-content: center;
     padding: 0 16px;
     border-bottom: 1px solid var(--border-color);
-    background: #0f172a;
+    background: var(--bg-sticky-header);
 }
 .gantt-row-title {
     font-size: 14px;
@@ -791,7 +882,7 @@ h1, h2, h3, h4 {
     display: flex;
     height: 56px;
     border-bottom: 1px solid var(--border-color);
-    background: rgba(15, 23, 42, 0.5);
+    background: var(--bg-x-header);
 }
 .gantt-x-header-cell {
     flex-shrink: 0;
@@ -801,11 +892,11 @@ h1, h2, h3, h4 {
     align-items: center;
     font-size: 11px;
     font-weight: 500;
-    border-right: 1px solid rgba(255, 255, 255, 0.03);
+    border-right: 1px solid var(--border-color);
     color: var(--text-muted);
 }
 .gantt-x-header-cell.month-boundary {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid var(--border-color);
 }
 .gantt-x-header-month {
     font-size: 10px;
@@ -836,6 +927,7 @@ h1, h2, h3, h4 {
     height: 80px;
     position: relative;
     border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-gantt-content);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
 }
 .gantt-grid-lines {
@@ -850,13 +942,13 @@ h1, h2, h3, h4 {
 .gantt-grid-line {
     flex-shrink: 0;
     height: 100%;
-    border-right: 1px solid rgba(255,255,255, 0.03);
+    border-right: 1px solid var(--border-gantt-line);
 }
 .gantt-grid-line.holiday {
     background: rgba(244, 63, 94, 0.04);
 }
 .gantt-grid-line.month-boundary {
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid var(--border-gantt-month);
 }
 
 /* Gantt Block Element */
@@ -918,14 +1010,14 @@ h1, h2, h3, h4 {
 /* Tooltip on hover */
 .gantt-tooltip {
     position: absolute;
-    background: rgba(15, 23, 42, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--bg-tooltip);
+    border: 1px solid var(--border-tooltip);
     border-radius: 8px;
     padding: 10px 14px;
     font-size: 12px;
     color: var(--text-main);
     z-index: 100;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     pointer-events: none;
     backdrop-filter: blur(10px);
     display: flex;
@@ -936,7 +1028,7 @@ h1, h2, h3, h4 {
 .tooltip-title {
     font-weight: 700;
     font-size: 13px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 4px;
     margin-bottom: 4px;
     color: var(--text-main);
@@ -1128,7 +1220,7 @@ input:focus, select:focus {
     box-shadow: 0 0 0 3px var(--primary-glow);
 }
 select option {
-    background: #0f172a;
+    background: var(--bg-select-option);
     color: var(--text-main);
 }
 .section-help {
@@ -1139,7 +1231,7 @@ select option {
 
 /* Segments section in Course modal */
 .segments-section {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--bg-section-inner);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 16px;
@@ -1292,4 +1384,27 @@ select option {
 .course-card.drag-over {
     border-top: 3px solid var(--primary) !important;
     transform: translateY(4px);
+}
+
+/* Smooth Theme Switching Transitions */
+body, .glass-card, .app-header, .gantt-y-header, .gantt-y-header-cell, .gantt-row-label, input, select, button, .modal-content, .gantt-x-header-cell, .gantt-grid-line, .gantt-timeline, .calendar-day, .calendar-header-day {
+    transition: background-color var(--transition-normal), border-color var(--transition-normal), color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+/* Theme Toggle Button Styling */
+.header-theme-toggle {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.header-theme-toggle:hover {
+    background: var(--bg-btn-hover);
+    color: var(--text-main);
+    border-color: var(--primary);
+    transform: scale(1.05);
+}
+body.dark-theme .header-theme-toggle {
+    background: var(--bg-input);
 }

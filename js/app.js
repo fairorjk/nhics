@@ -24,7 +24,8 @@ let state = {
     calendarCurrentDate: new Date(2026, 2, 1), // 캘린더 기준 월 (3월)
     ganttScrollOffset: 0,
     year: 2026,
-    currentPage: 1
+    currentPage: 1,
+    theme: 'light' // 'light' | 'dark'
 };
 
 // --- 초기 샘플 데이터 (5개 교육과정) ---
@@ -155,6 +156,7 @@ function saveToLocalStorage() {
     localStorage.setItem('eduschedule_courses', JSON.stringify(state.courses));
     localStorage.setItem('eduschedule_year', state.year.toString());
     localStorage.setItem('eduschedule_blocked', JSON.stringify(state.blockedWeeks));
+    localStorage.setItem('eduschedule_theme', state.theme);
 }
 
 function loadFromLocalStorage() {
@@ -162,6 +164,7 @@ function loadFromLocalStorage() {
     const savedCourses = localStorage.getItem('eduschedule_courses');
     const savedYear = localStorage.getItem('eduschedule_year');
     const savedBlocked = localStorage.getItem('eduschedule_blocked');
+    const savedTheme = localStorage.getItem('eduschedule_theme');
     
     if (savedRooms) {
         state.rooms = JSON.parse(savedRooms);
@@ -195,6 +198,13 @@ function loadFromLocalStorage() {
         ];
         localStorage.setItem('eduschedule_blocked', JSON.stringify(state.blockedWeeks));
     }
+
+    if (savedTheme) {
+        state.theme = savedTheme;
+    } else {
+        state.theme = 'light';
+    }
+    applyTheme();
 }
 
 // --- 초기화 (Initialization) ---
@@ -288,6 +298,12 @@ function initEventListeners() {
     if (dom.btnImportData && dom.inputImportFile) {
         dom.btnImportData.addEventListener('click', () => dom.inputImportFile.click());
         dom.inputImportFile.addEventListener('change', importDataFromFile);
+    }
+
+    // 테마 토글 버튼 핸들러
+    const btnThemeToggle = document.getElementById('btn-theme-toggle');
+    if (btnThemeToggle) {
+        btnThemeToggle.addEventListener('click', toggleTheme);
     }
 }
 
@@ -545,7 +561,7 @@ function getCourseColorStyle(course, isOnline) {
             background: hsla(${hue}, 80%, 35%, 0.15) !important;
             border: 1px solid hsla(${hue}, 90%, 55%, 0.4) !important;
             box-shadow: 0 2px 6px hsla(${hue}, 80%, 25%, 0.05) !important;
-            color: hsla(${hue}, 100%, 80%, 0.95) !important;
+            color: var(--color-online-text) !important;
         `;
     } else {
         return `
@@ -635,9 +651,9 @@ function renderCourseList() {
                 
                 let style = '';
                 if (isCleanup) {
-                    style = `background: rgba(255, 255, 255, 0.02) !important; color: var(--text-muted) !important; border: 1px dashed rgba(255, 255, 255, 0.15) !important; border-left: 3px solid rgba(255, 255, 255, 0.25) !important;`;
+                    style = `background: var(--bg-input) !important; color: var(--text-muted) !important; border: 1px dashed var(--border-color) !important; border-left: 3px solid var(--text-dark) !important;`;
                 } else if (isOnline) {
-                    style = `background: hsla(${hue}, 80%, 35%, 0.15) !important; color: hsla(${hue}, 100%, 80%, 0.95) !important; border: 1px solid hsla(${hue}, 90%, 55%, 0.4) !important; border-left: 3px solid hsla(${hue}, 90%, 55%, 0.8) !important;`;
+                    style = `background: hsla(${hue}, 80%, 35%, 0.15) !important; color: var(--color-online-text) !important; border: 1px solid hsla(${hue}, 90%, 55%, 0.4) !important; border-left: 3px solid hsla(${hue}, 90%, 55%, 0.8) !important;`;
                 } else {
                     style = `background: hsla(${hue}, 80%, 35%, 0.4) !important; color: #fff !important; border: 1px solid hsla(${hue}, 100%, 65%, 0.4) !important; border-left: 3px solid hsl(${hue}, 100%, 65%) !important;`;
                 }
@@ -902,7 +918,7 @@ function generateGanttHalfHTML(startW, endW, onlineSegs, onlineRowHeight) {
     
     // 온라인 행 추가 (동적 높이 적용)
     yHeaderHTML += `
-        <div class="gantt-row-label" style="background: linear-gradient(rgba(8, 145, 178, 0.05), rgba(8, 145, 178, 0.05)), #0f172a; height: ${onlineRowHeight}px; transition: height var(--transition-fast); justify-content: flex-start; padding-top: 10px;">
+        <div class="gantt-row-label" style="background: var(--bg-online-row); height: ${onlineRowHeight}px; transition: height var(--transition-fast); justify-content: flex-start; padding-top: 10px;">
             <span class="gantt-row-title" style="color: var(--secondary);">온라인 교육</span>
             <span class="gantt-row-subtitle">강의실 불필요</span>
         </div>
@@ -924,7 +940,7 @@ function generateGanttHalfHTML(startW, endW, onlineSegs, onlineRowHeight) {
 
     // 온라인 행 콘텐츠 생성 (동적 높이 및 계산된 온라인 세그먼트들 전달)
     rowsContentHTML += `
-        <div class="gantt-row-content" data-online-row="true" style="background: rgba(8, 145, 178, 0.02); height: ${onlineRowHeight}px; transition: height var(--transition-fast);">
+        <div class="gantt-row-content" data-online-row="true" style="background: var(--bg-online-row); height: ${onlineRowHeight}px; transition: height var(--transition-fast);">
             <div class="gantt-grid-lines">${gridLinesHTML}</div>
             ${renderGanttOnlineBlocks(onlineSegs, startW, endW)}
         </div>
@@ -1659,11 +1675,14 @@ function saveChartAsImage() {
     dom.btnSaveImage.disabled = true;
 
     // html2canvas 옵션 설정: 풀 스크롤 캡처와 고해상도를 지원
+    const isDark = state.theme === 'dark';
+    const bgImageColor = isDark ? '#080c15' : '#f8fafc';
+
     html2canvas(targetElement, {
         useCORS: true,
         allowTaint: true,
         scale: 2, // 2배 고해상도
-        backgroundColor: '#080c15', // 앱 배경색과 맞춤
+        backgroundColor: bgImageColor,
         scrollX: 0,
         scrollY: 0,
         width: targetElement.scrollWidth,
@@ -1684,4 +1703,28 @@ function saveChartAsImage() {
         btnText.innerText = originalText;
         dom.btnSaveImage.disabled = false;
     });
+}
+
+// --- 테마 상태 적용 및 제어 기능 ---
+function applyTheme() {
+    const btnToggle = document.getElementById('btn-theme-toggle');
+    if (!btnToggle) return;
+    const moonIcon = btnToggle.querySelector('.theme-icon-moon');
+    const sunIcon = btnToggle.querySelector('.theme-icon-sun');
+    
+    if (state.theme === 'dark') {
+        document.body.classList.add('dark-theme');
+        if (moonIcon) moonIcon.classList.add('hidden');
+        if (sunIcon) sunIcon.classList.remove('hidden');
+    } else {
+        document.body.classList.remove('dark-theme');
+        if (moonIcon) moonIcon.classList.remove('hidden');
+        if (sunIcon) sunIcon.classList.add('hidden');
+    }
+}
+
+function toggleTheme() {
+    state.theme = state.theme === 'dark' ? 'light' : 'dark';
+    saveToLocalStorage();
+    applyTheme();
 }
